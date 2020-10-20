@@ -23,3 +23,11 @@ DieTest >> testRoll [
    100000 timesRepeat: 
       [ self assert: (d roll between: 1 and: 6) ]
 ]
+
+{ #category : #test }
+DieTest >> testWithFaces [
+
+   | d |
+   d := Die withFaces: 77.
+   self assert: d faces equals: 77
+]
