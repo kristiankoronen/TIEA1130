@@ -34,6 +34,13 @@ Die >> initialize [
    faces := 6
 ]
 
+{ #category : #printing }
+Die >> printOn: aStream [
+
+   super printOn: aStream.
+   aStream nextPutAll: ' (', faces printString, ')' 
+]
+
 { #category : #operation }
 Die >> roll [
 	
